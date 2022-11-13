@@ -1,0 +1,10 @@
+import math
+start=int(10*float(input()))
+stop=int(10*float(input()))
+step=int(10*float(input()))
+o = ' '
+print('x: ',12*o,'y: ')
+for i in range (start,stop+step,step):
+    x= i/10
+    y = (x**3+2/math.tan(x))*math.sin(x)
+    print(x,12*o,y)
