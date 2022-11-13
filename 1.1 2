@@ -1,0 +1,28 @@
+a = str(input())
+b = str(input())
+text = a.find(b)
+if text == 0:
+    print('Подстрока"',b,'"есть в строке "',a,'"')
+    x = (3.14+len(a))/len(b)
+    print(x)
+if text ==-1:
+    print('Подстрока"',b,'"отсутствует в строке "',a,'"')
+    if len(a)%10==1:
+        print('Длина строки четна и кратно 5')
+        x=a+b
+        y=len(a+b)
+        print(x)
+        print(y)
+    elif len(a)%2!=0 and len(a)%3==0:
+        print(('Длина строки нечетна и кратно 3'))
+        z = str(input('Введите три строки: >>> '))
+        x = str(input())
+        c = str(input())
+        if len(z)==max(len(z),len(x),len(c)):
+            print('Строка',z,'- наибольшая по длине')
+        if len(x)==max(len(z),len(x),len(c)):
+            print('Строка',x,'- наибольшая по длине')
+        if len(c)==max(len(z),len(x),len(c)):
+            print('Строка',c,'- наибольшая по длине')
+    else:
+        print('Exit')
