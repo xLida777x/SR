@@ -1,0 +1,5 @@
+def func(x):
+     with open('txt.txt',mode='r') as myfile :
+        file_contents  = myfile.read().splitlines()
+     print(file_contents.pop(x))
+func(x=int(input('Введите номер строки из текста>>>')))
