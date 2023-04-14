@@ -1,0 +1,20 @@
+class Disease:
+ # Статические атрибуты
+ categories = ['инфекционные', 'вирусные', 'онкологические']
+ severity_levels = ['легкий', 'умеренный', 'тяжелый']
+
+def __init__(self, name, category, severity):
+ # Динамические атрибуты
+ self.name = name
+ self.category = category
+ self.severity = severity
+ self.treatments = []
+
+def add_treatment(self, treatment):
+ self.treatments.append(treatment)
+
+def print_info(self):
+ print('Название болезни:', self.name)
+ print('Категория болезни:', self.category)
+ print('Степень тяжести:', self.severity)
+ print('Лечение:', ', '.join(self.treatments))
